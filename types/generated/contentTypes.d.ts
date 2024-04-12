@@ -368,6 +368,7 @@ export interface ApiContactContact extends Schema.CollectionType {
     singularName: 'contact';
     pluralName: 'contacts';
     displayName: 'Contact';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -377,7 +378,7 @@ export interface ApiContactContact extends Schema.CollectionType {
     last: Attribute.String;
     avatar: Attribute.String;
     twitter: Attribute.String;
-    notes: Attribute.Text;
+    note: Attribute.Text;
     favorite: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
